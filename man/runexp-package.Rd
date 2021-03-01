@@ -26,6 +26,7 @@ Implements two methods of estimating runs scored in a softball
   \item \code{\link[runexp]{plot.chain}}: S3 method for plotting \code{chain} output objects 
   \item \code{\link[runexp]{prob_calc}}: calculates player probabilities from commonly 
         available stats 
+  \item \code{\link[runexp]{scrape}}: scrapes player statistics from a given URL
 }
 }
 
@@ -40,7 +41,7 @@ Implements two methods of estimating runs scored in a softball
 }
 
 \examples{
-# see "?chain" and "?sim" for relevant examples
+# see "?scrape", "?prob_calc", "?chain" and "?sim" for relevant examples
 }
 \references{
 B. Bukiet, E. R. Harold, and J. L. Palacios, “A Markov Chain Approach to Baseball,” 

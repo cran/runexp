@@ -14,7 +14,6 @@
 #     plot.chain (see documentation below)
 
 # Imported Functions ----------------------------------------------------------
-#' @importFrom stringr str_split
 #' @importFrom graphics abline axis matplot par plot rect segments text
 
 # Code to save "rda" file -----------------------------------------------------
@@ -50,7 +49,7 @@ decompose <- function(A) {
   A2 <- matrix(NA, nrow = k, ncol = k) # second possible play outcome
   for (i in 1:k) {
     for (j in 1:k) {
-      text_split <- str_split(A[i,j], '\\+')[[1]]
+      text_split <- strsplit(A[i,j], '\\+')[[1]]
       text_split <- gsub(" ", "", text_split, fixed = TRUE)
       A1[i, j] <- text_split[1]
       A2[i, j] <- text_split[2]
@@ -64,11 +63,11 @@ decompose <- function(A) {
   R2 <- matrix(NA, nrow = k, ncol = k) # second runs scored 
   for (i in 1:k) {
     for (j in 1:k) {
-      text_split <- str_split(A1[i,j], '\\(|\\)')[[1]]
+      text_split <- strsplit(A1[i,j], '\\(|\\)')[[1]]
       text_split <- gsub(" ", "", text_split, fixed = TRUE)
       O1[i, j] <- text_split[1]
       R1[i, j] <- text_split[2]
-      text_split <- str_split(A2[i,j], '\\(|\\)')[[1]]
+      text_split <- strsplit(A2[i,j], '\\(|\\)')[[1]]
       text_split <- gsub(" ", "", text_split, fixed = TRUE)
       O2[i, j] <- text_split[1]
       R2[i, j] <- text_split[2]

@@ -19,6 +19,7 @@ Functions:
 * `sim`: estimates run expectancy using multinomial simulation
 * `plot.chain`: S3 method for plotting `chain` output objects 
 * `prob_calc`: calculates player probabilities from commonly available stats 
+* `scrape`: scrapes player statistics from a given URL
 
 Data Files:
 
@@ -28,6 +29,12 @@ Data Files:
 Examples:
 
 ```
+# scrape ----------------------------------------------------------------------
+
+url <-"https://wmubroncos.com/sports/softball/stats/2019"
+test <- scrape(url)
+test_probs <- prob_calc(test)
+
 # prob_calc -------------------------------------------------------------------
 
 probs <- prob_calc(wku_stats)   # probs corresponds to wku_probs

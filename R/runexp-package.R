@@ -26,6 +26,7 @@
 #'   \item \code{\link[runexp]{plot.chain}}: S3 method for plotting \code{chain} output objects 
 #'   \item \code{\link[runexp]{prob_calc}}: calculates player probabilities from commonly 
 #'         available stats 
+#'   \item \code{\link[runexp]{scrape}}: scrapes player statistics from a given URL
 #' }
 #' 
 #' @section Data Files:
@@ -41,6 +42,6 @@
 #'     Operations Research 45, 14–23 (1997).
 #' 
 #' @examples 
-#' # see "?chain" and "?sim" for relevant examples
+#' # see "?scrape", "?prob_calc", "?chain" and "?sim" for relevant examples
 
 NULL
