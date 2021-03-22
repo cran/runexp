@@ -151,9 +151,6 @@ sim <- function(lineup, stats, inn = 7, reps = 100, graphic = FALSE, waitTime = 
          and overload in Plot Window.")
   }
   
-  # Message to User:
-  print(paste("Simulator is running ", reps, " game reps. with ", inn, "innings."))
-  
   time.check <- proc.time()[3] # Keeping track of run time
   p_stats <- check(lineup,stats)# run check function, store new cleaned stats
   

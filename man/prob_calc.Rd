@@ -33,6 +33,7 @@ The \code{playerData} data frame must contain the following columns
         \item 3B: triples
         \item HR: homeruns
         \item ATT: attempted steals
+        \item SB: successfully stolen bases
     }
     Plate appearances (PA) are calculated 
     as AB + BB + HBP.  The player probabilities are calculated as:
